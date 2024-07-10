@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="contact-form">
+		<h2>Get in touch with us by filling contact form below</h2>
+		<form action="#">
+			<input type="text" name="fullname" placeholder="*Enter your full name" required>
+			<input type="text" name="fullname" placeholder="*Enter your full name" required>
+			<input type="text" name="fullname" placeholder="*Enter your full name" required>
+			<textarea name="message" id="message" placeholder="* Your message here" required></textarea>
+			<button type="submit">Send message</button>
+			<span>*Please fill all require form field, thanks!</span>
+		</form>
+	</div>
+	<script defer src="face-api.min.js"></script>
+	<script defer src="script.js"></script>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		canvas {
+			position: absolute;
+		}
+	</style>
+	<video id="video" width="720" height="560" autoplay muted playsinline></video>
+</body>
+
+</html>
